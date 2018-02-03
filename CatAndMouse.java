@@ -36,13 +36,14 @@ public class CatAndMouse
                 out.println(" you are well fed, and ready to take a nap");
                 out.print("in the hay. There is no cat in the barn. You're");
                 out.println(" a happy mouse. You win!");
-            } else {
-                if (afterChair.equals("floor"))
+            } else if (afterChair.equals("floor")) {
                     out.print("You try to climb down the table leg but it's");
                     out.println(" too slippery. Thump! You hit the floor with a");
                     out.print("bang. The cat wakes up and chases you around the");
                     out.println(" kitchen! You race back to your hole,");
                     out.println("still hungry, and hide for the rest of the day. Play again later!");
+            } else {
+                out.println("Oops! You didn't choose a valid option.");
             }
         } else if (choice.equals("table")) {
             out.print("You sneak quietly to the table. The legs are polished and ");
@@ -91,10 +92,11 @@ public class CatAndMouse
                     out.print("You follow a grain trail to the barn and ");
                     out.println("find some warm hay to hide in for a nap. There");
                     out.println("is no cat in the barn. You're a happy mouse! You win!");
+                } else {
+                    out.println("Oops! You didn't choose a valid option.");
                 }
 
-            } else {
-                if (afterFood.equals("dish"))
+            } else if (afterFood.equals("dish")){
                     out.println("");
                 out.print("The cat food rattles loudly as you climb into the cat food dish. ");
                 out.println("The cat wakes up! And");
@@ -102,6 +104,8 @@ public class CatAndMouse
                 out.println("You are lunch. :( We'll be");
                 out.println("sure to notify your next of kin. A tiny mouse");
                 out.println("plays violin at your funeral.");
+            } else {
+                out.println("Oops! You didn't choose a valid option.");
             }
 
         } else if (choice.equals("curtain")) {
@@ -126,9 +130,17 @@ public class CatAndMouse
                 out.print("barn, you are well fed, and find a quiet spot in the ");
                 out.println("hay for a nap. There is no cat in the");
                 out.println("barn. You're a happy mouse! You win!");
+
+            } else {
+                out.println("Oops! You didn't choose a valid option.");
+            }
+
+        } else {
+                out.println("Oops!  You didn't choose a valid option.");
             }
 
 
         }
     }
-}
+
+
