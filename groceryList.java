@@ -21,11 +21,11 @@ public class groceryList
 
             out.println("Please list three items on your grocery shopping list.");
             out.println("Item 1?");
-            ItemOne = keyboard.next();
+            ItemOne = keyboard.nextLine();
             out.println("Item 2?");
-            ItemTwo = keyboard.next();
+            ItemTwo = keyboard.nextLine();
             out.println("Item 3?");
-            ItemThree = keyboard.next();
+            ItemThree = keyboard.nextLine();
             out.println("");
             out.println("Now, please enter the quantity of each item.");
             out.println("How many " + ItemOne + "?");
