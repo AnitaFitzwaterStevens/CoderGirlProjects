@@ -11,19 +11,16 @@ public class AreWeThereYet {
             String answer = keyboard.nextLine();
             if (answer.equals("yes")) {
                 keepGoing = false;
-                out.println("Yay!");
-                if (answer.equals("no")) {
-                    keepGoing = true;
-                } else {
-                    out.println("Huh? I don't understand.");
+                System.out.println("Yay!");
+            } else if (answer.equals("no")) {
+                keepGoing = true;
+            } else if (!answer.equals("no") && (!answer.equals("yes"))) {
+                keepGoing = true;
+                System.out.println("Huh? I don't understand.");
 
-
-                }
 
             }
         }
     }
 }
-
-
 
