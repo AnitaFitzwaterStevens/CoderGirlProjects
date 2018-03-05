@@ -12,36 +12,41 @@ public class PrettyDates {
         }
 
     // nameFormat
+
+
     public static String nameFormat(int month, int day, int year) {
-        if (1 == (month)) {
-            return "January";
-        } else if (2 == (month)) {
-            return "February";
-        } else if (3 == (month)) {
-            return "March";
-        } else if (4 == (month)) {
-            return "April";
-        } else if (5 == (month)) {
-            return "May";
-        } else if (6 == (month)) {
-            return "June";
-        } else if (7 == (month)) {
-            return "July";
-        } else if (8 == (month)) {
-            return "August";
-        } else if (9 == (month)) {
-            return "September";
-        } else if (10 == (month)) {
-            return "October";
-        } else if (11 == (month)) {
-            return "November";
-        } else if (12 == (month)) {
-            return "December";
-        } else {
-            return "";
-        }
+        String monthName = "Unknown";
+        if (month == 1) {
+            monthName = "January";
+        } else if(month == 2) {
+            monthName = "February";
+        } else if (month == 3) {
+            monthName = "March";
+        } else if (month == 4) {
+            monthName = "April";
+        } else if (month == 5) {
+            monthName = "May";
+        }else if (month == 6) {
+            monthName = "June";
+        } else if (month == 7) {
+            monthName = "July";
+        } else if (month == 8) {
+            monthName = "August";
+        } else if (month == 9) {
+            monthName = "September";
+        } else if (month == 10) {
+            monthName = "October";
+        } else if (month == 11) {
+            monthName = "November";
+        } else if (month == 12) {
+            monthName = "December";
+        } return((monthName) + " " + day + ", " + year);
 
         }
+
+
+
+
 
 
         // slashFormat
@@ -60,7 +65,7 @@ public class PrettyDates {
 
         // don't change this code.
         public static void printDate (int year, int month, int day){
-            System.out.println(nameFormat(year, month, day));
+            System.out.println(nameFormat(month, day, year));
             System.out.println(slashFormat(year, month, day));
             System.out.println(dashFormat(year, month, day));
             System.out.println();
